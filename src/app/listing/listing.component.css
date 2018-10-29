@@ -1,0 +1,18 @@
+
+
+.primary_text{
+  color: #2962ff;
+}
+.primary{
+  background: #2962ff;
+}
+
+.secondary{
+  background: #ff6f00;
+}
+.secondary_text{
+  color: #ff6f00;
+}
+ul li{
+display:inline-block;
+}

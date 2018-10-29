@@ -1,0 +1,47 @@
+<div class="main__cart__container">
+  <mat-toolbar [style.backgroundColor]="myblue">
+    <button routerLink="/home" type="button" mat-icon-button [style.color]="whiteIcon" style="background:transparent;" name="button"><mat-icon>arrow_back</mat-icon></button>
+    <span style="position:relative;margin-left:14px;" [style.color]="whiteIcon">my cart</span>
+
+  </mat-toolbar>
+<div class="row" class="empty__container" *ngIf="isCartEmpty">
+  <div class="col s12 center-align">
+    <img src="../../assets/empty.png" alt="" class="center-align" style="height:12em;">
+
+  </div>
+  <div class="col s12 center-align">
+    <span class="grey-text" style="text-align:center;">No item in shopping cart</span><br>
+    <button type="button" class="primary white-text center-align" mat-raised-button name="button">Start Shopping</button>
+  </div>
+</div>
+
+<div class="cart__container" style="min-height:100vh;height:auto;" *ngIf="!isCartEmpty">
+<div class="row" style="padding-top:10px;">
+  <div class="col s4">
+    <img src="../../assets/item.jpg"  style="height:5em;width:auto;" alt="">
+  </div>
+  <div class="col s8">
+<ul>
+  <li class="small_text"><span style="font-family:sans-serif;font-weight:bold;font-size:120%;">samsung galaxy s3 plus and more</span></li>
+  <li>{{40000 | currency:'GBP'}}</li>
+</ul>
+  </div>
+  <div class="col s12">
+    <button type="button" mat-icon-button name="button" class="red-text white"  (click)="openSnackBar()"><mat-icon>favorite</mat-icon></button>
+    <button type="button" mat-icon-button name="button" class="black-text white" (click)="openBottomSheet()"><mat-icon>share</mat-icon></button>
+    <button type="button" mat-icon-button name="button" class="black-text white right" (click)="openDialog()"><mat-icon>delete</mat-icon></button>
+    <mat-divider></mat-divider>
+  </div>
+</div>
+</div>
+<!-- <mat-toolbar class="row">
+
+
+<button class="col s6" mat-raised-button style="background:white;" (click)="openSnackBar()">
+add to wish list <mat-icon color="warn" >favorite</mat-icon>
+</button>
+<button class="col s6" mat-raised-button style="background:white;"  (click)="openDialog()">
+remove  <mat-icon>delete</mat-icon>
+</button>
+
+</mat-toolbar> -->

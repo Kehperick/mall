@@ -1,0 +1,55 @@
+<div class="main__container row">
+  <div class="col m1 l2">
+
+  </div>
+
+  <div class="col m10 l8 z-depth-1 white row" style="min-height:30em;height:auto;">
+    <div class=" primary col m4 l4" style="min-height: 30em;">
+      <div class="container white-text center-align" style="font-size:200%;">
+        {{login}}
+      </div>
+
+      <div class="container center-align">
+        <img src="../../assets/login.png" class="responsive-img center-align" alt="Login">
+      </div>
+    </div>
+    <div class="col m8 l8" style="overflow:hidden;">
+    <mat-tab-group>
+      <mat-tab label="Login">
+        <br>
+        <br>
+        <form class="" method="post">
+          <mat-form-field>
+            <input type="text" matInput  class="browser-default"  placeholder="Enter Username or email" value="">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input type="password" matInput class="browser-default" placeholder="password" value="">
+          </mat-form-field>
+        <br>
+        <br>
+          <button type="submit" class="secondary bold_text white-text" mat-raised-button style="width:50%;margin-left:25%;height:3.2em;"> Login </button>
+        <br>
+        <br>
+        </form>
+
+      </mat-tab>
+
+      <mat-tab label="Register">
+
+
+
+
+      <app-register></app-register>
+
+      </mat-tab>
+    </mat-tab-group>
+
+    </div>
+
+  </div>
+
+  <div class="col m1 l2">
+
+  </div>
+</div>

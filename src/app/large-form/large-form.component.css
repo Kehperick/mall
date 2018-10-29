@@ -1,0 +1,35 @@
+.main__container{
+  padding-top: 4%;
+  background: #fafafa;
+  min-height: 100vh;
+  height: auto;
+}
+.primary_text{
+  color: #2962ff;
+}
+.primary{
+  background: #2962ff;
+}
+mat-form-field{
+  width: 70%;
+  margin-left: 15%;
+}
+input{
+  width: 100%;
+}
+input::placeholder{
+  color: black;
+}
+.secondary{
+  background: #ff6f00;
+}
+.secondary_text{
+  color: #ff6f00;
+}
+.bold_text{
+  font-weight: bold;
+}
+.form_button_single{
+  height:3.2em;
+  width:10em;
+}

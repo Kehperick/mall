@@ -1,0 +1,51 @@
+<div class="main__container">
+  <div class="header__back row">
+<div class="col s2 ">
+  <button routerLink="/home" mat-icon-button name="button" class="white-text mywhite"><mat-icon>arrow_back</mat-icon></button>
+</div>
+  </div>
+<div class="row myblue fab__container">
+
+</div>
+<div class="row form__container">
+  <div class="col s1">
+
+  </div>
+    <form action="index.html" method="post" class="col s10  center-align white card z-depth-1 form__main" style="padding-top:25px;">
+      <mat-form-field>
+        <input type="text" class="browser-default" placeholder="enter username..." matInput name="" value="">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input [type]="hide ? 'password' : 'text'" class="browser-default " matInput placeholder="password"  >
+        <mat-icon style="cursor:pointer;" class="waves-effect waves-circle" matSuffix (click)="hide=!hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        </mat-form-field>
+        <br>
+        <br>
+        <button type="submit" mat-raised-button class="secondary white-text" style="height:3.4em; width:14em" name="button">Login</button>
+    </form>
+
+  <div class="col s1">
+
+  </div>
+
+</div>
+<br>
+<div class="row">
+  <div class="col s1">
+
+  </div>
+  <div class="col s10 ">
+      <div class="center-align">
+      <button type="button" mat-raised-button class="button_normal white primary_text "  name="button">Register | Sign Up</button>
+        <button type="button" mat-button class="button_normal white-text primary"  name="button">Create A shop</button>
+      </div>
+
+  </div>
+  <div class="col s1">
+
+  </div>
+</div>
+
+
+</div>
