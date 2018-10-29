@@ -1,0 +1,19 @@
+
+.myblue{
+  background:  #2962ff;
+}
+.img__medium{
+  height: 10em;
+}
+.margin-left{
+  margin-left: 10px;
+}
+.bargain__button{
+  height: 4em;
+  
+}
+@media screen and (max-width:600px) {
+  .small__font{
+    font-size: 90%;
+  }
+}

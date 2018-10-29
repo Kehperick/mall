@@ -1,0 +1,138 @@
+<mat-toolbar class="myblue hide-on-med-and-up">
+  <button routerLink="/home" mat-icon-button class="white-text myblue"><mat-icon>arrow_back</mat-icon></button>
+</mat-toolbar>
+<div class="single__container row">
+
+  <div class="col s2 m3  hide-on-large-only">
+  </div>
+  <div class="col s8 l5 m6">
+      <img src="../../assets/item.jpg" style="height:auto;width:90%;margin-left:5%;" alt="">
+<div class="row" style="width:90%;margin-left:5%;">
+
+</div>
+<mat-divider></mat-divider>
+  </div>
+  <div class="s2 m3 yellow hide-on-large-only">
+
+  </div>
+  <div class=" col s12 l7 m12 " style="min-height:20em;margin-top:30px;">
+<mat-list>
+
+  <mat-list-item><span  style="font-weight:bolder!important;font-size:130%;">Acorp phoenix headphone AVX18000 4000 quality with waterproof capability</span> </mat-list-item>
+
+  <mat-list-item><mat-icon class="green-text" matListIcon>loyalty</mat-icon><span style="font-weight:bold;font-size:130%;">12500FCFA</span>
+    <span class="grey-text" style="text-decoration:line-through; margin-left:12px">50000%</span>
+    <mat-chip-list >
+      <mat-chip color="warn" selected disabled>   23% off   </mat-chip>
+    </mat-chip-list>
+   </mat-list-item>
+
+
+   <!-- waranty or garantee set period  -->
+   <mat-list-item><mat-icon class="green-text" matListIcon>loyalty</mat-icon>
+     Waranty period: <span class="flow-text red-text margin-left">not set</span>
+    </mat-list-item>
+
+
+    <!--  description           -->
+   <mat-list-item><mat-icon class="green-text" matListIcon>loyalty</mat-icon>
+     this item is best for smartphone and good for grand ako to be using with maazi tabi and echiea levis<mat-icon class="blue-text margin-left">info</mat-icon>
+    </mat-list-item>
+
+
+   <mat-list-item><mat-icon class="green-text" matListIcon>loyalty</mat-icon><span class="green-text">Status:   Originial</span>
+    </mat-list-item>
+    <mat-list-item><mat-icon class="green-text" matListIcon>loyalty</mat-icon>
+      safe and secured <mat-icon class="green-text">security</mat-icon>
+     </mat-list-item>
+</mat-list>
+<div class="row" style="height:4em;">
+<mat-chip-list class="left">
+  <mat-chip disabled>easy shop </mat-chip>
+    <mat-chip class="red white-text">visit shop </mat-chip>
+      <mat-chip class="red white-text" disabled>bargainable</mat-chip>
+
+</mat-chip-list>
+
+</div>
+<div class="z-depth-1 row " style="height:4em;">
+
+  <button class="col s4 l4 m4 red white-text" mat-raised-button style="height:4em;">
+    add to cart<mat-icon>shopping_cart</mat-icon>
+  </button>
+
+  <button class="col s4 l4 m4 white" mat-raised-button style="height:4em;"  (click)="hide=!hide">
+    add to wishlist <mat-icon class="red-text">{{hide ?   'favorite' :  'favorite_border'}}</mat-icon>
+  </button>
+  <button class="col s4 l4 m4 white"  mat-raised-button style="height:4em;">
+    share <mat-icon>share</mat-icon>
+  </button>
+</div>
+
+  </div>
+
+</div>
+<div class="row">
+  <div class="col s5 m4 l4">
+    <button type="button" mat-raised-button class="white black-text bargain__button">bargain product price<mat-icon>attach_money</mat-icon></button>
+  </div>
+
+</div>
+
+
+
+
+<!-- no account prompt for the user to create more account for a beeter experience and offers -->
+<div class="row hide-on-small-only" style="height:3em;">
+  <div class="col l4 m4 "></div>
+  <div class="col l4 s12 center-align">
+    <button type="button" mat-button class="myblue white-text flow-text" style="height:3em;font-size:110%;border-radius:25px;" name="button">
+      <mat-icon>person</mat-icon>
+      create account to experience more
+    <mat-icon>keyboard_arrow_right</mat-icon>
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
+  </div>
+</div>
+
+<!-- similar prodict listing slideshow  ....................-->
+<div class=" row ">
+  <div class="col s12 l12 m12">
+    <h5>You may also like ...</h5>
+  </div>
+
+
+
+</div>
+<div class=" row hide-on-med-and-down">
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item2.jpg"  style="width:100%;height:20em"  alt="">
+  </div>
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item3.jpg"  style="width:100%;height:20em"  alt="">
+  </div>
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item.jpg"   style="width:100%;height:20em" alt="">
+  </div>
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item.png"   style="width:100%;height:20em" alt="">
+  </div>
+</div>
+
+
+
+<div class=" row  hide-on-large-only">
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item2.jpg" class="img__medium"  style="width:100%;"  alt="">
+  </div>
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item3.jpg" class="img__medium"  style="width:100%;"  alt="">
+  </div>
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item.jpg"  class="img__medium"   style="width:100%;" alt="">
+  </div>
+  <div class="col s3 l3 m3 card hoverable waves-effect  z-depth-1">
+    <img src="../../assets/item.png"  class="img__medium"   style="width:100%;" alt="">
+  </div>
+</div>
+<mat-divider></mat-divider>

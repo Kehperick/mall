@@ -1,0 +1,52 @@
+<mat-horizontal-stepper [linear]="true" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup" >
+      <ng-template matStepLabel>Identification</ng-template>
+      <mat-form-field>
+        <input matInput type="text" placeholder="your name" class="browser-default" formControlName="firstCtrl" required >
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="phone number" type="tel" class="browser-default"  required >
+      </mat-form-field>
+      <div class="container">
+        <button mat-raised-button class="primary white-text right form_button_single" matStepperNext type="button">next<mat-icon>chevron_right</mat-icon></button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Security</ng-template>
+      <mat-form-field>
+        <input matInput type="password" placeholder="password" class="browser-default" formControlName="secondCtrl" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="retype password" class="browser-default" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div >
+        <button type="button" mat-raised-button matStepperPrevious class="left form_button_single white ">previous</button>
+        <button mat-raised-button matStepperNext type="button" class="primary white-text right form_button_single">next<mat-icon>chevron_right</mat-icon></button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+
+  <span>By clicking Sign Up you agree  to our p
+    <a href="javascrip(0):void" routerLink="/policy">privacy terms and terms of agreement </a>
+    to review this terms click <a  href="javascrip(0):void"  routerLink="/policy">here</a>
+  </span>
+  <br>
+  <br>
+
+    <br>
+    <div class="">
+      <button mat-raised-button matStepperPrevious class="white left form_button_single">Back</button>
+        <button mat-raised-button (click)="stepper.reset()" class="green white-text right form_button_single">Sign Up</button>
+    </div>
+</mat-step>
+
+</mat-horizontal-stepper>
