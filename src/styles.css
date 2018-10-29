@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.myblue{
+  background:  #2962ff;
+}
+
+.spinner__large{
+  position: absolute;
+   width: 30%;
+   right: 35%;
+   top: 30%;
+   height: 30%;
+
+}
+.spinner__small{
+   position: absolute;
+   width: 20%;
+   right: 40%;
+   top: 30vh;
+   height: 25%;
+
+}
+.spinner__normal{
+  position: absolute;
+  width: 20%;
+  right: 34%;
+  top: 30vh;
+  height: 25%;
+}
