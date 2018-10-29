@@ -1,0 +1,79 @@
+<div class="main_container row">
+
+   <div class="col m1 l4">
+<mat-card class="hide-on-med-and-down">
+<mat-card-title>
+  Summary
+</mat-card-title>
+<mat-card-content>
+  <mat-list>
+    Total items: <span class="bold">4</span>
+  </mat-list>
+
+
+    <mat-list>
+      Total price: <span class="bold">{{69000 | currency:'GBP'}}</span>
+    </mat-list>
+    <mat-list>
+      Total discount: <span class="bold green-text">{{.3 | percent}}</span>
+    </mat-list>
+        <mat-list>
+          Final price: <span class="bold">{{69000-(.3*69000) | currency:'GBP'}}</span>
+        </mat-list>
+
+    <mat-list>
+      <button type="button" mat-raised-button class="secondary white-text" name="button">CheckOut Now</button>
+    </mat-list>
+</mat-card-content>
+</mat-card>
+   </div>
+
+<div class=" container col m10 l8 white z-depth-1 " style="height:auto;">
+
+  <div class="row ">
+    <div class="col s12 l12 m12 row " style="height:auto;margin-bottom:20px;">
+
+
+<div class="col m4 l4">
+  <img src="../../assets/item.jpg" alt=""  class="responsive-img center-align" style="max-height:8em;">
+  <div class="row">
+
+    <button type="button" mat-raised-button class="white  col m6 l6" name="button">favorite <mat-icon color="warn">favorite</mat-icon></button>
+
+
+    <button type="button" mat-raised-button class="white col m6 l6" name="button">share <mat-icon>share</mat-icon></button>
+  </div>
+
+</div>
+
+
+<div class="col m8 l8">
+  <ul>
+    <li style="font-family:'roboto condense'">Samsung galaxy s7 </li>
+    <li> Price: <span class="bold" >{{12000 | currency: 'GBP'}}</span></li>
+    <li>Product Type: refurbiged</li>
+      <li>From <span class="bold">(store)</span>: <span class="secondary_text">EAZI SHOP</span></li>
+  </ul>
+</div>
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+  <div class="row" style="padding-top:.6em">
+    <div class="col m6 l6">
+
+    </div>
+
+  <button type="button" mat-raised-button class="col m3 sl3 valid_height white black-text" routerLink="/home"> <mat-icon>chevron_left</mat-icon>Continue Shopping</button>
+
+  <button type="button" mat-raised-button class="col m3 sl3 valid_height secondary  white-text" name="button">CheckOut Now <mat-icon>chevron_right</mat-icon></button>
+
+  </div>
+
+</div>
+
+ <div class="col m1 hide-on-large-only">
+
+ </div>
+
+</div>

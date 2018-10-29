@@ -1,0 +1,23 @@
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="example-sidenav">
+
+  <app-sidenav></app-sidenav>
+  </mat-sidenav>
+
+  <mat-toolbar style="background:  #2962ff!important;" class="hide-on-med-and-up">
+    <mat-toolbar-row>
+      <button type="button" class="mytrainsparent white-text " name="button" mat-icon-button aria-label="open sidenav" (click)="sidenav.open()" ><mat-icon>menu</mat-icon></button>
+      <button  routerLink="/notifications" type="button" class="mytrainsparent white-text" style="position:absolute;right:7.4em;"  name="button" mat-icon-button><mat-icon>notifications</mat-icon></button>
+
+      <button type="button" matBadge="3" matBadgeColor="warn" routerLink="/cart" name="button" class="mytrainsparent white-text stl__icon" mat-icon-button><mat-icon>shopping_cart</mat-icon></button>
+      <button routerLink="/login" type="button" class="mytrainsparent white-text l_icon"  name="button" mat-icon-button><mat-icon>person</mat-icon></button>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+  <input matTooltip="search" routerLink="/search" type="search" class="browser-default small__search" placeholder="search shops, electronics fashion and more...." name="" value="">
+  <button matTooltip="search" routerLink="/search" type="button" mat-icon-button class="mytrainsparent small__search__btn" name="button"><mat-icon>search</mat-icon></button>
+  </mat-toolbar-row>
+  </mat-toolbar>
+  <!-- content goes here  -->
+
+</mat-sidenav-container>

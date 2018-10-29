@@ -1,0 +1,23 @@
+<div class="cat__container">
+  <div class="cat__back row">
+<div class="col s2 ">
+  <button routerLink="/back" matTooltip="back" mat-icon-button name="button" class="white-text mytransparent"><mat-icon>arrow_back</mat-icon></button>
+</div>
+<div class="col s8 center-align">
+  <span style="font-size:140%; font-weight:lighter;" class="white-text">category</span>
+</div>
+<div class="col s2">
+  <button mat-icon-button class="mytransparent">
+    <mat-icon  matTooltip="my cart" class=" hide-on-med-and-up shopping__cart white-text " matBadge="15" matBadgeColor="warn">shopping_cart</mat-icon>
+</button>
+
+</div>
+  </div>
+
+  <div class="cat__list row">
+    <mat-nav-list>
+    <mat-list-item *ngFor="let item of listItem"><mat-icon   style="margin-right:10px" matListIcon>{{item.icon}}</mat-icon> {{item.name}}</mat-list-item>
+
+    </mat-nav-list>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+
+.main_container{
+  width: 100%;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+
+.primary_text{
+  color: #2962ff;
+}
+.primary{
+  background: #2962ff;
+}
+
+.secondary{
+  background: #ff6f00;
+}
+.secondary_text{
+  color: #ff6f00;
+}
+.valid_height{
+  height:3.4em;
+}
+.bold{
+  font-family: 'roboto condensed';
+  font-weight:bold;
+  font-size:130%
+}
