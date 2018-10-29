@@ -1,0 +1,21 @@
+.main__account__container{
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: #fafafa;
+  z-index: 3;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.myblue{
+  background: #2962ff
+}
+mat-form-field{
+  width: 90%;
+  margin: auto;
+}
+form{
+  width: 100%;
+}
